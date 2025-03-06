@@ -16,12 +16,11 @@ ENV/
 *.swo
 
 # Ignore data and model files
-*.pt
+
 *.onnx
 *.weights
 *.csv
 *.json
-*.txt
 *.jpg
 *.png
 *.mp4
