@@ -1,0 +1,48 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore data and model files
+*.pt
+*.onnx
+*.weights
+*.csv
+*.json
+*.txt
+*.jpg
+*.png
+*.mp4
+
+# Ignore logs and outputs
+logs/
+output/
+results/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore pipenv files
+Pipfile
+Pipfile.lock
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/ 
+cam/
+app.py
