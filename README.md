@@ -11,7 +11,7 @@ This project uses YOLOv8 (You Only Look Once) to detect animals and humans in re
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.11.10
 - OpenCV
 - Ultralytics (YOLOv8)
 - NumPy
@@ -39,3 +39,41 @@ This project uses YOLOv8 (You Only Look Once) to detect animals and humans in re
 ## Usage
 
 Run the detection script:
+
+```bash
+python animal_human_detection.py
+```
+
+- Press `q` to quit the application.
+- Detected humans will be highlighted in green, and animals will be highlighted in blue.
+
+## Customization
+
+You can modify the `animal_classes` dictionary in `animal_human_detection.py` to add or remove animals based on your needs. For example:
+
+```python
+animal_classes = {
+    15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow',
+    20: 'elephant', 21: 'bear', 25: 'bird',
+    34: 'tiger', 35: 'leopard', 36: 'monkey', 37: 'snake'
+}
+```
+
+## Project Structure
+
+```
+animal-human-detection/
+├── animal_human_detection.py  # Main detection script
+├── requirements.txt           # Dependencies
+├── README.md                  # Project documentation
+└── .gitignore                 # Files to ignore in Git
+```
+
+## License
+
+This project is licensed for **educational purposes only**. The code and its derivatives cannot be used for commercial purposes or sold. All rights are reserved by the author.
+
+## Acknowledgments
+
+- [Ultralytics](https://ultralytics.com/) for the YOLOv8 model.
+- OpenCV for video processing.
